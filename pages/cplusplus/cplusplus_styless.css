@@ -1,0 +1,147 @@
+
+:root{
+    --secondary: #dddddd;
+    --primary: #2a23fc;
+    --shadow: #f9f9f9;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container{
+    position: fixed;
+    width: 100%;
+}
+
+.list-header{
+    background: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-container{
+    padding-top: 128px;
+}
+
+.section{
+    background: var(--secondary);
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline var(--primary);
+    padding: 10px 0px 10px 0px;
+}
+
+fa-icon{
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+.section .description{
+    font-size: 20px;
+}
+
+.section-3 .description{
+    border: 1px solid var(--primary);
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.images-container{
+    display: flex;
+}
+
+.images-container img{
+    margin: 10px 0px 10px 0px;
+}
+
+.image-container img{
+    max-width: 300px;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    color: var(--primary);
+    background-color: var(--secondary);
+    transition: 0.5s;
+}
+
+a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.section-1:hover, .section-2:hover, .section-3:hover {
+    background-color: var(--primary);
+    transition: 0.5s;
+    color: var(--secondary);
+}
+
+.icon-container, .icon-container-reverse{
+    max-width: 50px;
+}
+
+.icon-container img, .icon-container-reverse img{
+    width: 100%;
+}
+
+.icon-container-reverse img{
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 800px){
+
+    .section-container{
+        padding-top: 29px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    li{
+        list-style: none;
+    }
+    
+    .title{
+        font-size: 40px;
+    }
+
+    .section .description{
+        font-size: 26px;
+    }
+    
+    .list-header{
+        font-size: 26px;
+        display: flex;
+    }
+}
