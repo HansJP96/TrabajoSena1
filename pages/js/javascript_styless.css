@@ -2,6 +2,8 @@
 :root{
     --secondary: #dddddd;
     --primary: #fae75e;
+    --third: #ffbf00;
+    --fourth: #000000;
     --shadow: #1e1e2071;
 }
 
@@ -86,7 +88,7 @@ li{
 }
 
 li:hover{
-    color: var(--primary);
+    color: var(--third);
     background-color: var(--secondary);
     transition: 0.5s;
 }
@@ -97,7 +99,7 @@ a img:hover{
 }
 
 .section-1:hover, .section-2:hover, .section-3:hover {
-    background-color: var(--primary);
+    background: linear-gradient(0deg, var(--fourth) 0%, var(--primary) 100%);
     transition: 0.5s;
     color: var(--secondary);
 }
